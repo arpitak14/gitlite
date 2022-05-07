@@ -1,0 +1,35 @@
+Revision
+- 80% attendance
+- inform in advance
+- Assignments to be done before the next session. 
+- 
+
+
+What is DevOps
+challenges
+- Process
+- Tech
+- People
+- Culture
+
+
+Automation 
+
+Lean
+
+Challenges with skills
+
+Extreme automation at all levels
+
+Issues/problems faced
+
+How to measure how we are doing in DevOps
+- Lead Time
+- Frequency of release/deployment
+- Change Fail
+- Time to Restore
+- Availability
+
+
+
+
