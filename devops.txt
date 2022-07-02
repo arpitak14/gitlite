@@ -1,0 +1,233 @@
+DevOps
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+
+This article has multiple issues. Please help improve it or discuss these issues on the talk page. (Learn how and when to remove these template messages)
+Some of this article's listed sources may not be reliable. (December 2018)
+A major contributor to this article appears to have a close connection with its subject. (August 2021)
+This article possibly contains original research. (May 2022)
+This article may need to be rewritten to comply with Wikipedia's quality standards. (May 2022)
+DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.[1] DevOps is complementary with Agile software development; several DevOps aspects came from the Agile methodology.
+
+
+Contents
+1	Definition
+2	History
+3	Relationship to other approaches
+3.1	Agile
+3.2	ArchOps
+3.3	CI/CD
+3.4	Site-reliability engineering
+3.5	Toyota production system, lean thinking, kaizen
+3.6	DevSecOps, Shifting Security Left
+4	Cultural change
+4.1	Microservices
+4.2	DevOps automation
+4.2.1	Automation with version control
+5	GitOps
+6	See also
+7	Notes
+8	References
+9	Further reading
+Definition
+Other than it being a cross-functional combination (and a portmanteau) of the terms and concepts for "development" and "operations", academics and practitioners have not developed a universal definition for the term "DevOps".[a][b][c][d] Most often, DevOps is characterized by key principles: shared ownership, workflow automation, and rapid feedback.
+
+From an academic perspective, Len Bass, Ingo Weber, and Liming Zhu—three computer science researchers from the CSIRO and the Software Engineering Institute—suggested defining DevOps as "a set of practices intended to reduce the time between committing a change to a system and the change being placed into normal production, while ensuring high quality".[5]
+
+However, the term is used in multiple contexts. At its most successful, DevOps is a combination of specific practices, culture change, and tools.[6]
+
+History
+Unbalanced scales.svg
+This section may lend undue weight to certain ideas, incidents, or controversies. Please help improve it by rewriting it in a balanced fashion that contextualizes different points of view. (December 2018) (Learn how and when to remove this template message)
+In 1993 the Telecommunications Information Networking Architecture Consortium (TINA-C) defined a Model of a Service Lifecycle that combined software development with (telecom) service operations.[7]
+
+In 2009, the first conference named devopsdays was held in Ghent, Belgium. The conference was founded by Belgian consultant, project manager and agile practitioner Patrick Debois.[8][who?][9] The conference has now spread to other countries.[10]
+
+In 2012, the State of DevOps report was conceived and launched by Alanna Brown at Puppet.[11][12]
+
+As of 2014, the annual State of DevOps report was published by Nicole Forsgren, Gene Kim, Jez Humble and others. They stated that the adoption of DevOps was accelerating.[13][14] Also in 2014, Lisa Crispin and Janet Gregory wrote the book More Agile Testing, containing a chapter on testing and DevOps.[15][16]
+
+In 2016 the DORA metrics for throughput (deployment frequency, lead time for changes), and stability (mean time to recover, change failure rate) were published in the State of DevOps report.[11]
+
+Relationship to other approaches
+Many of the ideas fundamental to DevOps practices are inspired by, or mirror, other well known practices such as Lean and Deming's Plan-Do-Check-Act cycle, through to The Toyota Way and the Agile approach of breaking down components and batch sizes.[17] Contrary to the "top-down" proscriptive approach and rigid framework of ITIL in the 1990s, DevOps is "bottom-up" and a flexible practice, created by software engineers, with software engineer needs in mind.[18]
+
+Agile
+Main article: Agile software development
+The motivations for what has become modern DevOps and several standard DevOps practices such as automated build and test, continuous integration, and continuous delivery originated in the Agile world, which dates (informally) to the 1990s, and formally to 2001. Agile development teams using methods such as Extreme Programming couldn't "satisfy the customer through early and continuous delivery of valuable software"[19] unless they subsumed the operations / infrastructure responsibilities associated with their applications, many of which they automated. Because Scrum emerged as the dominant Agile framework in the early 2000s and it omitted the engineering practices that were part of many Agile teams, the movement to automate operations / infrastructure functions splintered from Agile and expanded into what has become modern DevOps. Today, DevOps focuses on the deployment of developed software, whether it is developed via Agile or other methodologies.
+
+ArchOps
+ArchOps presents an extension for DevOps practice, starting from software architecture artifacts, instead of source code, for operation deployment.[20] ArchOps states that architectural models are first-class entities in software development, deployment, and operations.
+
+CI/CD
+Main article: CI/CD
+Automation is a core principle for achieving DevOps success and CI/CD is a critical component.[21] Plus, improved collaboration and communication between and within teams helps achieve faster time to market, with reduced risks.[22]
+
+Site-reliability engineering
+Main article: Site reliability engineering
+In 2003, Google developed site reliability engineering (SRE), an approach for releasing new features continuously into large-scale high-availability systems while maintaining high-quality end-user experience.[23] While SRE predates the development of DevOps, they are generally viewed as being related to each other.
+
+Toyota production system, lean thinking, kaizen
+Main article: Toyota Production System
+Toyota production system, also known under the acronym TPS, was the inspiration for lean thinking with its focus on continuous improvement, kaizen, flow and small batches. The Andon cord principle to create fast feedback, swarm and solve problems stems from TPS.[24][25]
+
+DevSecOps, Shifting Security Left
+DevSecOps is an augmentation of DevOps to allow for security practices to be integrated into the DevOps approach. Contrary to a traditional centralized security team model, each delivery team is empowered to factor in the correct security controls into their software delivery. Security practices and testing are performed earlier in the development lifecycle, hence the term "shift left" can be used. Security is tested in three main areas: static, software composition, and dynamic.
+
+Checking the code statically via static application security testing (SAST) is white-box testing with special focus on security. Depending on the programming language, different tools are needed to do such static code analysis. The software composition is analyzed, especially libraries and their versions are checked against vulnerability lists published by CERT and other expert groups. When giving software to clients, licenses and its match to the one of the software distributed are in focus, especially copyleft licenses. Dynamic testing is also called black-box testing. The software is tested without knowing its inner functions. In DevSecOps it is on one hand called dynamically (DAST), or penetration testing. The goal is to catch, amongst others, errors like cross-site scripting, or SQL injection early. Threat types are for example published by the open web application security project, e.g. its TOP10.[26] On the other hand, especially with microservices interactive application testing (IAST) is helpful to check which code is executed when running automated functional tests, the focus is to detect vulnerabilities within the applications. Contrary to SAST and DAST, IAST works inside the application.
+
+Cultural change
+DevOps initiatives can create cultural changes in companies[27] by transforming the way operations, developers, and testers collaborate during the development and delivery processes.[1] Getting these groups to work cohesively is a critical challenge in enterprise DevOps adoption.[28][29] DevOps is as much about culture, as it is about the toolchain.[30]
+
+Microservices
+Although in principle it is possible to practice DevOps with any architectural style, the microservices architectural style is becoming the standard for building continuously deployed systems. Small size service allows the architecture of an individual service to emerge through continuous refactoring.[31]
+
+DevOps automation
+It also supports consistency, reliability, and efficiency within the organization, and is usually enabled by a shared code repository or version control. As DevOps researcher Ravi Teja Yarlagadda hypothesizes, "Through DevOps, there is an assumption that all functions can be carried out, controlled, and managed in a central place using a simple code."[32]
+
+Automation with version control
+Many organizations use version control to power DevOps automation technologies like virtual machines, containerization (or OS-level virtualization), and CI/CD. The paper DevOps: development of a toolchain in the banking domain notes that with teams of developers working on the same project, "All developers need to make changes to the same codebase and sometimes edit even the same files. For efficient working, there has to be a system that helps engineers avoid conflicts and retain the codebase history,"[33] with the Git version control system and the GitHub platform referenced as examples.
+
+GitOps
+[icon]	
+This section needs expansion. You can help by adding to it. (April 2022)
+GitOps evolved from DevOps.[34][35][36] The specific state of deployment configuration is version-controlled (using Git for example).[37][38][39] Changes to configuration can be managed using code review practices, and can be rolled back using version-controlling.
+
+See also
+DataOps
+DevOps toolchain
+Twelve-factor app
+Infrastructure as code
+Lean software development
+Value stream
+Notes
+ Dyck et al. (2015) "To our knowledge, there is no uniform definition for the terms release engineering and DevOps. As a consequence, many people use their own definitions or rely on others, which results in confusion about those terms."[2]
+ Jabbari et al. (2016) "The research results of this study showed the need for a definition as individual studies do not consistently define DevOps."[3]
+ Erich et al. (2017) "We noticed that there are various gaps in the study of DevOps: There is no consensus of what concepts DevOps covers, nor how DevOps is defined."[4]
+ Erich et al. (2017) "We discovered that there exists little agreement about the characteristics of DevOps in the academic literature."[4]
+References
+ Loukides, Mike (7 June 2012). "What is DevOps?". O'Reilly Media.
+ Dyck, Andrej; Penners, Ralf; Lichter, Horst (19 May 2015). "Towards Definitions for Release Engineering and DevOps". Proceedings of the 2015 IEEE/ACM 3rd International Workshop on Release Engineering. IEEE: 3. doi:10.1109/RELENG.2015.10. ISBN 978-1-4673-7070-7. S2CID 4659735.
+ Jabbari, Ramtin; bin Ali, Nauman; Petersen, Kai; Tanveer, Binish (May 2016). "What is DevOps?: A Systematic Mapping Study on Definitions and Practices". Proceedings of the 2016 Scientific Workshop. Association for Computing Machinery.
+ Erich, F.M.A.; Amrit, C.; Daneva, M. (June 2017). "A Qualitative Study of DevOps Usage in Practice". Journal of Software: Evolution and Process. 29 (6): e1885. doi:10.1002/smr.1885. S2CID 35914007.
+ Bass, Len; Weber, Ingo; Zhu, Liming (2015). DevOps: A Software Architect's Perspective. ISBN 978-0134049847.
+ Muñoz, Mirna; Negrete Rodríguez, Mario (April 2021). "A guidance to implement or reinforce a DevOps approach in organizations: A case study".
+ Chapman, M., Gatti, N: A model of a service life cycle, Proceedings of TINA '93, pp. I-205–I-215, Sep., 1993.
+ Mezak, Steve (25 January 2018). "The Origins of DevOps: What's in a Name?". devops.com. Retrieved 6 May 2019.
+ Debois, Patrick (9 October 2008). "Agile 2008 Toronto". Just Enough Documented Information. Retrieved 12 March 2015.
+ Debois, Patrick. "DevOps Days". DevOps Days. Retrieved 31 March 2011.
+ Alana Brown; Nicole Forsgren; Jez Humble; Nigel Kersten; Gene Kim (2016). "2016 State of DevOps Report" (PDF). Puppet Labs, DORA (DevOps Research. Retrieved 6 May 2019.
+ "Puppet - Alanna Brown". Puppet Labs. Retrieved 27 April 2019.
+ Nicole Forsgren; Gene Kim; Nigel Kersten; Jez Humble (2014). "2014 State of DevOps Report" (PDF). Puppet Labs, IT Revolution Press and ThoughtWorks. Retrieved 27 April 2019.
+ "2015 State of DevOps Report" (PDF). Puppet Labs, Pwc, IT Revolution Press. 2015. Retrieved 6 May 2019.
+ "More Agile Testing" (PDF). October 2014. Retrieved 6 May 2019.
+ Crispin, Lisa; Gregory, Janet (October 2014). More Agile Testing. ISBN 9780133749571. Retrieved 6 May 2019.
+ Klein, Brandon Thorin (1 May 2021). The DevOps: A Concise Understanding to the DevOps Philosophy and Science. doi:10.2172/1785164. OSTI 1785164. S2CID 236606284 https://www.osti.gov/biblio/1785164/. {{cite journal}}: Missing or empty |title= (help)
+ "The History and Evolution of DevOps | Tom Geraghty". Retrieved 29 November 2020.
+ "Principles behind the Agile Manifesto". agilemanifesto.org. Retrieved 6 December 2020.
+ Castellanos, Camilo; Correal, Dario (15 September 2018). Executing Architectural Models for Big Data Analytics. Lecture Notes in Computer Science. Vol. 11048. pp. 364–371. doi:10.1007/978-3-030-00761-4_24. ISBN 978-3-030-00760-7.
+ Humble, Jez; Farley, David (2011). Continuous Delivery: reliable software releases through build, test, and deployment automation. Pearson Education Inc. ISBN 978-0-321-60191-9.
+ Chen, Lianping (2015). "Continuous Delivery: Huge Benefits, but Challenges Too". IEEE Software. 32 (2): 50–54. doi:10.1109/MS.2015.27. S2CID 1241241.
+ Beyer, Betsy; Jones, Chris; Petoff, Jennifer; Murphy, Niall Richard (April 2016). Site Reliability Engineering. O'Reilly Media. ISBN 978-1-4919-2909-4.
+ Analyzing the DNA of DevOps, Brent Aaron Reed, Willy Schaub, 2018-11-14.
+ The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations, Gene Kim, Patrick Debois, John Willis, Jezz Humble, 2016
+ OWASP TOP10, Open web application security project, accessed 2021-11-25.
+ Emerging Technology Analysis: DevOps a Culture Shift, Not a Technology (Report). Gartner.
+ "Gartner IT Glossary – devops". Gartner. Retrieved 30 October 2015.
+ Jones, Stephen; Noppen, Joost; Lettice, Fiona (21 July 2016). Proceedings of the 2nd International Workshop on Quality-Aware Dev Ops - QUDOS 2016 (PDF). pp. 7–11. doi:10.1145/2945408.2945410. ISBN 9781450344111. S2CID 515140.
+ Mandi Walls (25 September 2015). "Building a DevOps culture". O'Reilly.
+ Chen, Lianping; Ali Babar, Muhammad (2014). "2014 IEEE/IFIP Conference on Software Architecture". The 11th Working IEEE/IFIP Conference on Software Architecture(WICSA 2014). IEEE. pp. 195–204. doi:10.1109/WICSA.2014.45. ISBN 978-1-4799-3412-6.
+ Teja Yarlagadda, Ravi (9 March 2021). "DevOps and Its Practices". SSRN 3798877.
+ Morisio, Maurizio (16 April 2021). DevOps: development of a toolchain in the banking domain. Politecnico di Torino (laurea). Retrieved 16 August 2021.
+ "Getting Started with GitOps". TheNewStack.io. 13 December 2021. Retrieved 5 April 2022.
+ "GitOps Workflows and Principles for Kubernetes". ContainerJournal.com. 1 April 2022. Retrieved 5 April 2022.
+ "Kubernetes at Scale without GitOps Is a Bad Idea". TheNewStack.io. 7 March 2022. Retrieved 5 April 2022.
+ "Top 5 Challenges in Modern Kubernetes Testing". TheNewStack.io. 11 March 2022. Retrieved 5 April 2022.
+ "The world's largest telcos are now embracing GitOps. Deutsche Telekom explains why".
+ "Can 'shift left' in DevOps pipelines go too far?". Techtarget.com. Retrieved 5 April 2022.
+Further reading
+Davis, Jennifer; Daniels, Ryn (30 May 2016). Effective DevOps : building a culture of collaboration, affinity, and tooling at scale. Sebastopol, CA: O'Reilly. ISBN 9781491926437. OCLC 951434424.
+Kim, Gene; Debois, Patrick; Willis, John; Humble, Jez; Allspaw, John (7 October 2015). The DevOps handbook : how to create world-class agility, reliability, and security in technology organizations (First ed.). Portland, OR. ISBN 9781942788003. OCLC 907166314.
+Forsgren, Nicole; Humble, Jez; Kim, Gene (27 March 2018). Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations (First ed.). IT Revolution Press. ISBN 9781942788331.
+Categories: Agile software developmentSoftware development processInformation technology management
+Navigation menu
+Not logged in
+Talk
+Contributions
+
+
+In software, a toolchain is the set of programming tools that is used to perform a complex software development task or to create a software product, which is typically another computer program or a set of related programs. In general, the tools forming a toolchain are executed consecutively so the output or resulting environment state of each tool becomes the input or starting environment for the next one, but the term is also used when referring to a set of related tools that are not necessarily executed consecutively.[3][4][5]
+
+As DevOps is a set of practices that emphasizes the collaboration and communication of both software developers and other information technology (IT) professionals, while automating the process of software delivery and infrastructure changes, its implementation can include the definition of the series of tools used at various stages of the lifecycle; because DevOps is a cultural shift and collaboration between development and operations, there is no one product that can be considered a single DevOps tool. Instead a collection of tools, potentially from a variety of vendors, are used in one or more stages of the lifecycle.[6][7]
+
+Stages of DevOps
+Further information: DevOps
+Plan
+Plan is composed of two things: "define" and "plan".[8] This activity refers to the business value and application requirements. Specifically "Plan" activities include:
+
+Production metrics, objects and feedback
+Requirements
+Business metrics
+Update release metrics
+Release plan, timing and business case
+Security policy and requirement
+A combination of the IT personnel will be involved in these activities: business application owners, software development, software architects, continual release management, security officers and the organization responsible for managing the production of IT infrastructure.
+
+Create
+Create is composed of the building, coding, and configuring of the software development process.[8] The specific activities are:
+
+Design of the software and configuration
+Coding including code quality and performance
+Software build and build performance
+Release candidate
+Tools and vendors in this category often overlap with other categories. Because DevOps is about breaking down silos, this is reflective in the activities and product solutions.[clarification needed]
+
+Verify
+Verify is directly associated with ensuring the quality of the software release; activities designed to ensure code quality is maintained and the highest quality is deployed to production.[8] The main activities in this are:
+
+Acceptance testing
+Regression testing
+Security and vulnerability analysis
+Performance
+Configuration testing
+Solutions for verify related activities generally fall under four main categories: Test automation, Static analysis, Test Lab, and Security.
+
+Packaging
+Packaging refers to the activities involved once the release is ready for deployment, often also referred to as staging or Preproduction / "preprod".[8] This often includes tasks and activities such as:
+
+Approval/preapprovals
+Package configuration
+Triggered releases
+Release staging and holding
+Release
+Release related activities include schedule, orchestration, provisioning and deploying software into production and targeted environment.[9] The specific Release activities include:
+
+Release coordination
+Deploying and promoting applications
+Fallbacks and recovery
+Scheduled/timed releases
+Solutions that cover this aspect of the toolchain include application release automation, deployment automation and release management.
+
+Configure
+Configure activities fall under the operation side of DevOps. Once software is deployed, there may be additional IT infrastructure provisioning and configuration activities required.[8] Specific activities including:
+
+Infrastructure storage, database and network provisioning and configuring
+Application provision and configuration.
+The main types of solutions that facilitate these activities are continuous configuration automation, configuration management, and infrastructure as code tools.[10]
+
+Monitor
+Monitoring is an important link in a DevOps toolchain. It allows IT organization to identify specific issues of specific releases and to understand the impact on end-users.[8] A summary of Monitor related activities are:
+
+Performance of IT infrastructure
+End-user response and experience
+Production metrics and statistics
+Information from monitoring activities often impacts Plan activities required for changes and for new release cycles.
+
+Version Control
+Version Control is an important link in a DevOps toolchain and a component of software configuration management. Version Control is the management of changes to documents, computer programs, large web sites, and other collections of information.[8] A summary of Version Control related activities are:
+
+Non-linear development
+Distributed development
+Compatibility with existent systems and protocols
+Toolkit-based design
+Information from Version Control often supports Release activities required for changes and for new release cycles.
